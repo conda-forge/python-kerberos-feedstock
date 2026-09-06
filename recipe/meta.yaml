@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kerberos-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/kerberos-{{ version }}.tar.gz
   sha256: cdd046142a4e0060f96a00eb13d82a5d9ebc0f2d7934393ed559bac773460a2c
 
 build:
-  number: 3
+  number: 4
   script:  {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
